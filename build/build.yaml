@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    repository: 'your-docker-repo/frontend'
+    tags: 'latest'
