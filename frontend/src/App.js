@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5001/microservice1")
+    fetch("http://localhost:5001/microservice1")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
