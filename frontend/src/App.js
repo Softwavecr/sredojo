@@ -6,15 +6,11 @@ function App() {
   const getRandomServer = () => {
     return Math.floor(Math.random() * 2) + 1;
   };
-  // useEffect(() => {
-  //   fetch("http://127.0.0.1:5001/microservice1")
-  //     .then((response) => response.json())
-  //     .then((data) => setData(data));
-  // }, []);
 
   useEffect(() => { 
     const serverNumber = getRandomServer();
-    fetch(`/microservice${serverNumber}`)
+    const port = serverNumber === 1 ? 5001 : 5002;
+    fetch(`http://127.0.0.1:${port}/microservice${serverNumber}`)
       .then((response) => response.json()) 
       .then((data) => setData(data));
   }, []);
