@@ -7,4 +7,4 @@ def microservice1():
     return jsonify(["Hello", "from", "Microservice1"])
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5001)

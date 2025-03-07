@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/microservice1")
+    fetch("http://127.0.0.1:5001/microservice1")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
@@ -21,8 +21,3 @@ function App() {
 
 export default App;
 
-
-//hello world
-//sytem.out.println("hello world");
-
-//why is claude better than copilot?
