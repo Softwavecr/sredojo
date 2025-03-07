@@ -16,4 +16,4 @@ spec:
       - name: frontend
         image: your-docker-repo/frontend:latest
         ports:
-        - containerPort: 3099
+        - containerPort: 30001
