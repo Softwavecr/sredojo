@@ -5,7 +5,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/microservice2', methods=['GET'])
-def microservice1():
+def microservice2():
     return jsonify(["Hello", "from", "Microservice2"])
 
 if __name__ == '__main__':

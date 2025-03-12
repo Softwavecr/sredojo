@@ -10,6 +10,7 @@ function App() {
   useEffect(() => { 
     const serverNumber = getRandomServer();
     const port = serverNumber === 1 ? 5001 : 5002;
+
     fetch(`http://127.0.0.1:${port}/microservice${serverNumber}`)
       .then((response) => response.json()) 
       .then((data) => setData(data));
