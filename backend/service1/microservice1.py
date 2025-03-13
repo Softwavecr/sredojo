@@ -10,3 +10,12 @@ def microservice1():
 
 if __name__ == '__main__':
     app.run(port=5001)
+
+# run
+# python microservice1.py
+
+# Output
+# * Running on http://
+
+# Build the Docker image
+# docker build -t microservice1 .
