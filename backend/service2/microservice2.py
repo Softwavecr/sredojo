@@ -19,3 +19,6 @@ if __name__ == '__main__':
 
 # Build the Docker image
 # docker build -t microservice2 .
+# username@hostname:~/path/websimple/sredojo/backend/service2$ sudo docker build -t microservice2 .
+
+# username@hostname:~/path/websimple/sredojo/backend/service2$ sudo docker tag microservice2 y8p3kxzuctktsz6/softwavecr:ms2latestag
